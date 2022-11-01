@@ -35,6 +35,9 @@ div:focus{outline:none;}
 
 section.content{position: relative; width: 100%; padding-bottom: 13vw; background: #fff;}
 main{overflow: hidden;}
+/* ======================== mobile chk ======================== */
+.mobile_chk{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 46px;}
+.mobile_chk p{font-size: 52px; font-weight: bold;}
 
 /* ======================== 메뉴 ======================== */
 .menu_show{position: fixed; top: 0%; right: -100%; width: 100%; height: 100%; background: linear-gradient(225deg, #744bf0, #4b6fd4); z-index: 9999; transition: all .5s cubic-bezier(0, 0.21, 0.03, 1.01);}
@@ -497,5 +500,6 @@ footer address span{padding: 0 2vw;}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px){
+  .mobile_chk{display: none;}
   .main_wrap .slide_wrap .total_slide_wrap .item_list ul.slick-dots li{font-size: 5vw;}
 }
